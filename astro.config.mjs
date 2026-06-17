@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://ucla-anderson-ssai.github.io',
+	site: 'https://ArchDuke-IN.github.io',
 	base: '/ai-course-site',
 	integrations: [
 		starlight({

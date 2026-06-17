@@ -4,21 +4,24 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://ucla-anderson-ssai.github.io',
+	base: '/ai-course-site',
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'AI for Management & Research',
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/ucla-anderson-ssai/SSAI' }],
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: 'Foundation',
+					autogenerate: { directory: 'foundation' },
 				},
 				{
-					label: 'Reference',
-					items: [{ autogenerate: { directory: 'reference' } }],
+					label: 'Research',
+					autogenerate: { directory: 'research' },
+				},
+				{
+					label: 'Management',
+					autogenerate: { directory: 'management' },
 				},
 			],
 		}),

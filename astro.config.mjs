@@ -13,15 +13,15 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Foundation',
-					autogenerate: { directory: 'foundation' },
+					items: [{ autogenerate: { directory: 'foundation' } }],
 				},
 				{
 					label: 'Research',
-					autogenerate: { directory: 'research' },
+					items: [{ autogenerate: { directory: 'research' } }],
 				},
 				{
 					label: 'Management',
-					autogenerate: { directory: 'management' },
+					items: [{ autogenerate: { directory: 'management' } }],
 				},
 			],
 		}),
